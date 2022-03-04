@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-text;
+  font-weight: 300;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-head;
+  font-weight: 900;
+}
+
+ul {
+  @include reset-list;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a { text-decoration: none; }
+
+strong { font-weight: 700; }
+
+.container {
+  display: flex;
+  max-width: $screen-xl;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.logo {
+  background: url("/images/logo.svg") 0 0 no-repeat;
+}
+
+.btn {
+  background-color: $btn-bg;
+  color: $btn-color;
+  padding: 0 em(30);
+  border-radius: em(8);
+  height: em(40);
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bg-hover;
+    color: $btn-color-hover;
+  }
+}

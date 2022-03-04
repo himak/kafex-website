@@ -1,0 +1,59 @@
+.navigation {
+  background-color: $white;
+  @include shadow-1;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    height: em(120);
+  }
+
+  .logo {
+    font-size: 1em;
+    margin: 0;
+    text-indent: -9999px;
+    height: em(80);
+    width: em(80);
+    background-size: em(80);
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  &:last-child {
+    .nav-link {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-family: $font-head;
+  color: rgba($black, 80%);
+  white-space: nowrap;
+  height: em(40);
+  padding: 0 em(20);
+  margin: 0 em(10);
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &.btn {
+    color: $btn-color;
+    padding: 0 em(30);
+  }
+}
+
+
+@media (max-width: $screen-sm)  {
+  .navigation {
+    font-size: 10px;
+  }
+}

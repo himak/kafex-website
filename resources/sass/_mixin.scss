@@ -1,0 +1,9 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin shadow-1 {
+  box-shadow: 0  0  em(8) rgba($black, 8%);
+}
