@@ -63,6 +63,49 @@ strong {
   background-color: #3A4348;
 }
 
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
+  position: absolute;
+  background-color: rgba(0, 155, 255, 0.2);
+}
+
+.circle-1 {
+  height: 3.75em;
+  width: 3.75em;
+  border-radius: 3.75em;
+}
+
+.circle-2 {
+  height: 5em;
+  width: 5em;
+  border-radius: 5em;
+}
+
+.circle-3 {
+  height: 6.25em;
+  width: 6.25em;
+  border-radius: 6.25em;
+}
+
+.circle-4 {
+  height: 8.75em;
+  width: 8.75em;
+  border-radius: 8.75em;
+}
+
+.circle-5 {
+  height: 12.5em;
+  width: 12.5em;
+  border-radius: 12.5em;
+}
+
 .logo {
   background: url("/images/logo.svg") 0 0 no-repeat;
 }
@@ -86,6 +129,7 @@ strong {
   background-color: #fff;
   box-shadow: 0 0 0.5em rgba(58, 67, 72, 0.08);
   position: relative;
+  z-index: 9999;
 }
 .navigation .container {
   flex-direction: row;
@@ -144,6 +188,29 @@ strong {
 }
 .hero {
   text-align: center;
+}
+.hero .container {
+  position: relative;
+}
+.hero .circle-1 {
+  bottom: 16%;
+  left: -8%;
+}
+.hero .circle-2 {
+  bottom: -14%;
+  left: 15%;
+}
+.hero .circle-3 {
+  top: -6%;
+  right: 6%;
+}
+.hero .circle-4 {
+  left: 60%;
+  top: 30%;
+}
+.hero .circle-5 {
+  right: -10%;
+  bottom: 8%;
 }
 
 .hero-title {

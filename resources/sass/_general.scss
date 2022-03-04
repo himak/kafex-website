@@ -46,6 +46,49 @@ strong { font-weight: 700; }
 .bg-gray { background-color: $bg-grey }
 .bg-black { background-color: $bg-black }
 
+// Circles
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
+  position: absolute;
+  background-color: rgba($blue, 20%);
+}
+
+.circle-1 {
+  height: em(60);
+  width: em(60);
+  border-radius: em(60);
+}
+
+.circle-2 {
+  height: em(80);
+  width: em(80);
+  border-radius: em(80);
+}
+
+.circle-3 {
+  height: em(100);
+  width: em(100);
+  border-radius: em(100);
+}
+
+.circle-4 {
+  height: em(140);
+  width: em(140);
+  border-radius: em(140);
+}
+
+.circle-5 {
+  height: em(200);
+  width: em(200);
+  border-radius: em(200);
+}
 
 // Logo
 .logo {
