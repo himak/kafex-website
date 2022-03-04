@@ -1,8 +1,10 @@
 .navigation {
   background-color: $white;
   @include shadow-1;
+  position: relative; // for shadow
 
   .container {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: em(120);
@@ -31,7 +33,7 @@
 }
 
 .nav-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-family: $font-head;
   color: rgba($black, 80%);
@@ -52,8 +54,20 @@
 }
 
 
+@media (min-width: $screen-lg)  {
+  .navigation {
+    .container {
+      padding: 0 em(100);
+    }
+  }
+}
+
 @media (max-width: $screen-sm)  {
   .navigation {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .nav-link {
+    margin: 0;
   }
 }

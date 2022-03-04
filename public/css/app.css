@@ -41,9 +41,26 @@ strong {
 
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-light {
+  background-color: #F8FAFF;
+}
+
+.bg-gray {
+  background-color: #81919A;
+}
+
+.bg-black {
+  background-color: #3A4348;
 }
 
 .logo {
@@ -51,22 +68,27 @@ strong {
 }
 
 .btn {
+  font-family: Nunito, sans-serif;
   background-color: #009BFF;
-  color: #F8FAFF;
+  color: #fff;
   padding: 0 1.875em;
   border-radius: 0.5em;
   height: 2.5em;
+  display: inline-flex;
+  align-items: center;
 }
 .btn:hover, .btn:focus {
   background-color: #3A4348;
-  color: #F8FAFF;
+  color: #fff;
 }
 
 .navigation {
   background-color: #fff;
   box-shadow: 0 0 0.5em rgba(58, 67, 72, 0.08);
+  position: relative;
 }
 .navigation .container {
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 7.5em;
@@ -89,7 +111,7 @@ strong {
 }
 
 .nav-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-family: Nunito, sans-serif;
   color: rgba(58, 67, 72, 0.8);
@@ -102,12 +124,64 @@ strong {
   color: #009BFF;
 }
 .nav-link.btn {
-  color: #F8FAFF;
+  color: #fff;
   padding: 0 1.875em;
 }
 
+@media (min-width: 992px) {
+  .navigation .container {
+    padding: 0 6.25em;
+  }
+}
 @media (max-width: 576px) {
   .navigation {
-    font-size: 10px;
+    font-size: 12px;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+}
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.75em;
+  line-height: 1.1666666667em;
+  margin: 0;
+  padding-top: 1em;
+  text-transform: uppercase;
+  color: #009BFF;
+  text-shadow: 4px 4px 0 rgba(0, 155, 255, 0.2);
+}
+
+.hero-text {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 0.8333333333em 0 0;
+}
+
+.hero-content .btn {
+  margin-top: 1.875em;
+}
+
+.hero-image {
+  border-radius: 0.5em;
+  position: relative;
+  bottom: -2.5em;
+}
+.hero-image img {
+  border-radius: 0.5em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(58, 67, 72, 0.08);
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    padding-top: 0.5em;
+  }
+
+  .hero-text {
+    margin-top: 0.4166666667em;
   }
 }

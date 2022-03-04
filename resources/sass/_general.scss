@@ -33,21 +33,36 @@ strong { font-weight: 700; }
 
 .container {
   display: flex;
+  flex-direction: column;
   max-width: $screen-xl;
   margin: 0 auto;
   padding: 0 1em;
 }
 
+
+// Background Color
+.bg-white { background-color: $bg-white }
+.bg-light { background-color: $bg-light }
+.bg-gray { background-color: $bg-grey }
+.bg-black { background-color: $bg-black }
+
+
+// Logo
 .logo {
   background: url("/images/logo.svg") 0 0 no-repeat;
 }
 
+
+// Button
 .btn {
+  font-family: $font-head;
   background-color: $btn-bg;
   color: $btn-color;
   padding: 0 em(30);
   border-radius: em(8);
   height: em(40);
+  display: inline-flex;
+  align-items: center;
 
   &:hover,
   &:focus {

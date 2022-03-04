@@ -25,7 +25,7 @@
                     <li class="nav-item"><a href="{{ url('/#o-nas') }}" class="nav-link">{{ __('O nás') }}</a></li>
                     <li class="nav-item"><a href="{{ url('/#sluzby') }}" class="nav-link">{{ __('Služby') }}</a></li>
                     <li class="nav-item"><a href="{{ url('/#projekty') }}" class="nav-link">{{ __('Projekty') }}</a></li>
-                    <li class="nav-item"><a href="{{ url('/#kontakt') }}" class="nav-link btn">{{ __('Kontak') }}</a></li>
+                    <li class="nav-item"><a href="{{ url('/#kontakt') }}" class="nav-link btn">{{ __('Kontakt') }}</a></li>
                 </ul>
             </nav>
         </div>
