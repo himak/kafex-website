@@ -255,3 +255,131 @@ strong {
     margin-top: 0.4166666667em;
   }
 }
+.about {
+  margin-top: 7.5em;
+}
+.about .container {
+  position: relative;
+  flex-direction: row;
+}
+.about .circle-1 {
+  bottom: 1.25em;
+  left: 5em;
+}
+.about .circle-2 {
+  top: -6.25em;
+  left: 10em;
+  z-index: -1;
+}
+.about .circle-3 {
+  top: -1.875em;
+  right: 12.5em;
+}
+
+.about-content {
+  width: 50%;
+  padding: 2.5em;
+  border-radius: 0.5em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(58, 67, 72, 0.08);
+  position: relative;
+  z-index: 1;
+  right: -6.25em;
+  left: 10%;
+}
+
+.about-title {
+  font-size: 2.5em;
+  line-height: 1.15em;
+  margin: 0;
+  color: #3A4348;
+}
+
+.about-text {
+  position: relative;
+  margin-right: 6.25em;
+}
+.about-text p:first-child {
+  margin-top: 1.25em;
+}
+.about-text p {
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+.about-text .btn {
+  margin: 1.875em 0 0.625em;
+}
+
+.about-footer {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  top: 3.75em;
+}
+
+.about-photo {
+  position: absolute;
+  z-index: 2;
+  bottom: 2.5em;
+  left: -7.5em;
+  max-width: 9.125em;
+  height: 9.125em;
+  border-radius: 9.125em;
+}
+.about-photo, .about-photo img {
+  border-radius: 9.125em;
+  box-shadow: 0.5em 0.5em 0.5em rgba(58, 67, 72, 0.08);
+}
+
+.about-image {
+  position: absolute;
+  z-index: 1;
+}
+.about-image, .about-image img {
+  border-radius: 0.5em;
+  transform: rotate(-2deg);
+}
+
+@media (max-width: 768px) {
+  .about .container {
+    flex-direction: column;
+  }
+  .about .circle-1 {
+    bottom: 1.25em;
+    left: 0.625em;
+  }
+  .about .circle-2 {
+    top: -6.25em;
+    left: 6.25em;
+    z-index: -1;
+  }
+  .about .circle-3 {
+    top: 5em;
+    right: -2.5em;
+  }
+
+  .about-content {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .about-footer {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .about-text {
+    margin-right: unset;
+  }
+
+  .about-photo,
+.about-image {
+    position: absolute;
+  }
+
+  .about-photo {
+    left: unset;
+    right: -1.25em;
+    bottom: -5em;
+  }
+}

@@ -1,0 +1,146 @@
+.about {
+    margin-top: em(120);
+
+    .container {
+      position: relative; // for circles
+      flex-direction: row;
+    }
+
+    .circle-1 {
+      bottom: em(20);
+      left: em(80);
+    }
+
+    .circle-2 {
+      top: em(-100);
+      left: em(160);
+      z-index: -1;
+    }
+
+    .circle-3 {
+      top: em(-30);
+      right: em(200);
+    }
+}
+
+.about-content {
+  width: 50%;
+  padding: em(40);
+  border-radius: em(8);
+  @include shadow-2;
+  position: relative;
+  z-index: 1;
+  right: em(-100);
+  left: 10%;
+}
+
+.about-title {
+  font-size: em(40);
+  line-height: em(46, 40);
+  margin: 0;
+  color: $black;
+}
+
+.about-text {
+  position: relative;
+  margin-right: em(100);
+
+  p:first-child {
+    margin-top: em(20);
+  }
+
+  p {
+    line-height: em(24);
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin: em(30) 0 em(10);
+  }
+}
+
+.about-footer {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  top: em(60);
+}
+
+.about-photo {
+  position: absolute;
+  z-index: 2;
+  bottom: em(40);
+  left: em(-120);
+  max-width: em(146);
+  height: em(146);
+  border-radius: em(146);
+
+  &, img {
+    border-radius: em(146);
+    @include shadow-2;
+  }
+}
+
+.about-image {
+  position: absolute;
+  z-index: 1;
+
+  &, img {
+    border-radius: em(8);
+    transform: rotate(-2deg);
+  }
+}
+
+
+@media (max-width: $screen-md) {
+  .about {
+    .container {
+      flex-direction: column;
+    }
+
+    .circle-1 {
+      bottom: em(20);
+      left: em(10);
+    }
+
+    .circle-2 {
+      top: em(-100);
+      left: em(100);
+      z-index: -1;
+    }
+
+    .circle-3 {
+      top: em(80);
+      right: em(-40);
+    }
+  }
+
+  .about-content {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .about-footer {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .about-text {
+    margin-right: unset;
+  }
+
+  .about-photo,
+  .about-image {
+    position: absolute;
+  }
+
+  .about-photo {
+    left: unset;
+    right: em(-20);
+    bottom: em(-80);
+  }
+
+  .about-image {
+  }
+}

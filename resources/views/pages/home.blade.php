@@ -7,5 +7,6 @@
 @section('content')
 
     @include('pages.partials.hero')
+    @include('pages.partials.about')
 
 @endsection
