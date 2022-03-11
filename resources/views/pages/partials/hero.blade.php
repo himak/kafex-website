@@ -1,12 +1,11 @@
 <section class="hero bg-light">
     <div class="container">
-        <div class="circles">
+{{--        <div class="circles">--}}
             <div class="circle-1"></div>
-            <div class="circle-2"></div>
             <div class="circle-3"></div>
             <div class="circle-4"></div>
             <div class="circle-5"></div>
-        </div>
+{{--        </div>--}}
         <header>
             <h2 class="hero-title">{{ __('Tvorba web stránok') }}</h2>
         </header>

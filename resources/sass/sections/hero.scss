@@ -9,11 +9,11 @@
     bottom: 16%;
     left: -8%;
   }
-
-  .circle-2 {
-    bottom: -14%;
-    left: 15%;
-  }
+  //
+  //.circle-2 {
+  //  bottom: -14%;
+  //  left: 15%;
+  //}
 
   .circle-3 {
     top: -6%;
@@ -66,6 +66,12 @@
 
 
 @media (max-width: $screen-sm)  {
+  .hero {
+    .container {
+      //overflow: hidden;
+    }
+  }
+
   .hero-title {
     padding-top: em(30, 60);
   }

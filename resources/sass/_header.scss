@@ -66,9 +66,16 @@
 @media (max-width: $screen-sm)  {
   .navigation {
     font-size: 12px;
+    background-color: $bg-light;
+    box-shadow: unset;
+    z-index: 0;
   }
 
   .nav-link {
     margin: 0;
+
+    &.btn {
+      display: none;
+    }
   }
 }

@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -99,6 +103,7 @@ strong { font-weight: 700; }
 // Button
 .btn {
   font-family: $font-head;
+  white-space: nowrap;
   background-color: $btn-bg;
   color: $btn-color;
   padding: 0 em(30);
