@@ -8,5 +8,7 @@
 
     @include('pages.partials.hero')
     @include('pages.partials.about')
+    @include('pages.partials.services')
+    @include('pages.partials.technologies')
 
 @endsection

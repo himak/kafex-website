@@ -1,5 +1,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
+  //outline: 1px solid red;
 }
 
 html,
@@ -75,6 +76,14 @@ p {
 .bg-light { background-color: $bg-light }
 .bg-gray { background-color: $bg-grey }
 .bg-black { background-color: $bg-black }
+.bg-blue {
+  background-color: $bg-blue;
+  color: $bg-blue-text;
+}
+
+.rounded {
+  border-radius: em(8);
+}
 
 // Circles
 .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
