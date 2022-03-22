@@ -35,14 +35,40 @@ a { text-decoration: none; }
 
 strong { font-weight: 700; }
 
+small {
+  font-size: .8em;
+}
+
+p {
+  line-height: em(22);
+}
+
+.sr-only {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   max-width: $screen-xl;
   margin: 0 auto;
   padding: 0 1em;
+  position: relative;
 }
 
+// Grid
+.box {
+  display: flex;
+  gap: em(20);
+}
+
+.item {
+  flex: 1;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
 
 // Background Color
 .bg-white { background-color: $bg-white }
@@ -51,14 +77,6 @@ strong { font-weight: 700; }
 .bg-black { background-color: $bg-black }
 
 // Circles
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
   position: absolute;
   background-color: rgba($blue, 20%);

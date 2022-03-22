@@ -1,9 +1,8 @@
 <section class="about">
     <div class="container">
-        <div class="circle-1"></div>
-        <div class="circle-2"></div>
         <div class="circle-3"></div>
-        <div class="about-content bg-light">
+
+        <div class="about-body bg-light">
             <header>
                 <h2 class="about-title">{{ __('Kto je KAFEX') }}</h2>
             </header>

@@ -12,7 +12,7 @@
     <title>{{ config('app.name') }} - @yield('title', 'Tvorba web stránok')</title>
 
     {{--  Styles  --}}
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset( mix('/css/app.css') ) }}" rel="stylesheet">
 </head>
 <body>
 
@@ -32,6 +32,9 @@
     </header>
 
     @yield('content')
+
+
+    <script src="{{ asset( mix('/js/app.js') ) }}"></script>
 </body>
 </html>
 

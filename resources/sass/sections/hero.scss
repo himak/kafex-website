@@ -1,19 +1,10 @@
 .hero {
   text-align: center;
 
-  .container {
-    position: relative; // for circles
-  }
-
   .circle-1 {
     bottom: 16%;
     left: -8%;
   }
-  //
-  //.circle-2 {
-  //  bottom: -14%;
-  //  left: 15%;
-  //}
 
   .circle-3 {
     top: -6%;
@@ -26,8 +17,8 @@
   }
 
   .circle-5 {
-    right: -10%;
-    bottom: 4%;
+    right: 0;
+    bottom: em(-140);
   }
 }
 
@@ -64,6 +55,13 @@
   }
 }
 
+@media (min-width: $screen-md) {
+
+  .hero-footer {
+    //padding: 0 em(100);
+  }
+
+}
 
 @media (max-width: $screen-sm)  {
   .hero {

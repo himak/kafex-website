@@ -11,3 +11,16 @@
 @mixin shadow-2 {
   box-shadow: em(8)  em(8)  em(8) rgba($black, 8%);
 }
+
+@mixin heading {
+  font-family: $font-head;
+  font-weight: 900;
+}
+
+@mixin section-title {
+  @include heading;
+  font-size: em(40);
+  line-height: em(52, 40);
+  margin: 0;
+  color: $black;
+}

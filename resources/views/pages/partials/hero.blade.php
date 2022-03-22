@@ -1,18 +1,19 @@
 <section class="hero bg-light">
     <div class="container">
-{{--        <div class="circles">--}}
-            <div class="circle-1"></div>
-            <div class="circle-3"></div>
-            <div class="circle-4"></div>
-            <div class="circle-5"></div>
-{{--        </div>--}}
+        <div class="circle-1"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+
         <header>
             <h2 class="hero-title">{{ __('Tvorba web stránok') }}</h2>
         </header>
+
         <div class="hero-content">
             <p class="hero-text">{{ __('Wordpress stránky, jednoduché e-shopy a výkonné Laravel webové aplikácie.') }}</p>
             <a href="{{ url('#kontakt') }}" class="btn btn-primary">{{ __('Chcem web stránku') }}</a>
         </div>
+
         <footer class="hero-footer">
             <picture class="hero-image">
                 <source srcset="{{ asset('/images/hero.jpg') }}" media="(max-width: 1200px)">
