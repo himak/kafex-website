@@ -17,7 +17,12 @@
     top: 27%;
   }
 
+  .box {
+    gap: em(20);
+  }
+
   .item {
+    flex: 1;
     position: relative;
     top: 0;
     transition: top .6s;

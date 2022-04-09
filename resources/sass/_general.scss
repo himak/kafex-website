@@ -60,11 +60,10 @@ p {
 // Grid
 .box {
   display: flex;
-  gap: em(20);
 }
 
 .item {
-  flex: 1;
+  //flex: 1;
 }
 
 .text-no-wrap {
@@ -141,7 +140,7 @@ p {
 
   &:hover,
   &:focus {
-    background-color: $btn-bg-hover;
-    color: $btn-color-hover;
+    background-color: $btn-bg-hover !important;
+    color: $btn-color-hover !important;
   }
 }

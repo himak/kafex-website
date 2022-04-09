@@ -3,6 +3,7 @@
 
         <div class="circle-1"></div>
         <div class="circle-3"></div>
+        <div class="circle-5"></div>
 
         <div class="technologies-header">
             <h3 class="technologies-title">Pracujem <span class="text-no-wrap">s technológiami</span></h3>

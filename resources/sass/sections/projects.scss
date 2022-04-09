@@ -1,0 +1,145 @@
+.projects {
+  margin: em(100) 0;
+
+  .container {
+    max-width: $screen-lg;
+  }
+
+  .bg-light {
+    padding: em(60);
+  }
+
+  .box {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: 44%;
+    margin: 0 3% em(60);
+    flex: unset;
+    background-color: $bg-white;
+    border-radius: 0 0 em(8) em(8);
+    @include shadow-1();
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .btn {
+    margin-top: em(30);
+  }
+}
+
+.projects-subtitle {
+  font-size: em(40);
+  @include heading();
+  margin: 0 0 0 3%;
+}
+
+.projects-text {
+  margin: 0 0 0 3%;
+  width: 80%;
+}
+
+.projects-body {
+  margin-top: em(60);
+}
+
+.projects-item-body {
+  padding: em(30);
+}
+
+.projects-item-title {
+  margin: 0 0 em(10);
+}
+
+.projects-item-text {
+  margin: 0;
+}
+
+.projects-item-link {
+  display: inline-block;
+  font-size: em(14);
+  text-decoration: underline;
+  color: $black;
+  margin-top: em(10, 14);
+}
+
+
+.mobilroka .btn {
+  background-color: $mobilroka;
+}
+.apartmanynevadza .btn {
+  background-color: $apartmanynavadza;
+}
+.onlinefaktury .btn {
+  background-color: $onlinefaktury;
+}
+.webstore .btn {
+  background-color: $webstore;
+}
+
+
+
+@media (max-width: $screen-lg) {
+ .projects .item {
+  width: 100%;
+  margin: 0;
+  margin-bottom: em(40);
+ }
+
+ .projects-item {
+  display: flex;
+  flex-direction: row;
+ }
+
+ .projects-image,
+ .projects-item-body {
+  width: 50%;
+ }
+
+ .projects-item-body {
+  display: flex-inline;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+}
+
+
+@media (max-width: $screen-md) {
+
+  .projects {
+    
+    .bg-light {
+      padding: em(100);
+    }
+  }
+
+ .projects-item {
+  flex-direction: column;
+ }
+
+ .projects-image,
+ .projects-item-body {
+  width: 100%;
+ }
+
+}
+
+
+@media (max-width: $screen-sm) {
+
+  .projects {
+    
+    .bg-light {
+      padding: em(30);
+    }
+  }
+
+  .projects-item-body {
+    padding: em(20);
+  }
+
+}
+

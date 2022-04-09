@@ -66,11 +66,6 @@ p {
 
 .box {
   display: flex;
-  gap: 1.25em;
-}
-
-.item {
-  flex: 1;
 }
 
 .text-no-wrap {
@@ -153,8 +148,8 @@ p {
   align-items: center;
 }
 .btn:hover, .btn:focus {
-  background-color: #3A4348;
-  color: #fff;
+  background-color: #3A4348 !important;
+  color: #fff !important;
 }
 
 .navigation {
@@ -440,7 +435,11 @@ p {
   right: 5%;
   top: 27%;
 }
+.services .box {
+  gap: 1.25em;
+}
 .services .item {
+  flex: 1;
   position: relative;
   top: 0;
   transition: top 0.6s;
@@ -558,6 +557,10 @@ p {
   bottom: -3.125em;
   right: 25%;
 }
+.technologies .circle-5 {
+  left: -10em;
+  bottom: 3.75em;
+}
 
 .technologies-title {
   font-size: 1.875em;
@@ -600,5 +603,130 @@ p {
   .technologies-image {
     width: 25%;
     margin: 1.25em;
+  }
+}
+.projects {
+  margin: 6.25em 0;
+}
+.projects .container {
+  max-width: 992px;
+}
+.projects .bg-light {
+  padding: 3.75em;
+}
+.projects .box {
+  flex-wrap: wrap;
+}
+.projects .item {
+  width: 44%;
+  margin: 0 3% 3.75em;
+  flex: unset;
+  background-color: #fff;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 0 0 0.5em rgba(58, 67, 72, 0.08);
+}
+.projects p {
+  margin: 0;
+}
+.projects .btn {
+  margin-top: 1.875em;
+}
+
+.projects-subtitle {
+  font-size: 2.5em;
+  font-family: Nunito, sans-serif;
+  font-weight: 900;
+  margin: 0 0 0 3%;
+}
+
+.projects-text {
+  margin: 0 0 0 3%;
+  width: 80%;
+}
+
+.projects-body {
+  margin-top: 3.75em;
+}
+
+.projects-item-body {
+  padding: 1.875em;
+}
+
+.projects-item-title {
+  margin: 0 0 0.625em;
+}
+
+.projects-item-text {
+  margin: 0;
+}
+
+.projects-item-link {
+  display: inline-block;
+  font-size: 0.875em;
+  text-decoration: underline;
+  color: #3A4348;
+  margin-top: 0.7142857143em;
+}
+
+.mobilroka .btn {
+  background-color: #0C133B;
+}
+
+.apartmanynevadza .btn {
+  background-color: #4A4E8C;
+}
+
+.onlinefaktury .btn {
+  background-color: #3490DC;
+}
+
+.webstore .btn {
+  background-color: #57D2F7;
+}
+
+@media (max-width: 992px) {
+  .projects .item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2.5em;
+  }
+
+  .projects-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects-image,
+.projects-item-body {
+    width: 50%;
+  }
+
+  .projects-item-body {
+    display: flex-inline;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .projects .bg-light {
+    padding: 6.25em;
+  }
+
+  .projects-item {
+    flex-direction: column;
+  }
+
+  .projects-image,
+.projects-item-body {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .projects .bg-light {
+    padding: 1.875em;
+  }
+
+  .projects-item-body {
+    padding: 1.25em;
   }
 }
