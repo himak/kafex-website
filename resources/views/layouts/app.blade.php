@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50619940-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50619940-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{--  SEO  --}}
     <meta name="keywords" content="@yield('meta_keywords','some default keywords')">
     <meta name="description" content="@yield('meta_description','default description')">
-    <link rel="canonical" href="{{url()->current()}}"/>
+    {{-- <link rel="canonical" href="{{url()->current()}}"/> --}}
+    <link rel="canonical" href="{{ url('/') }}"/>
 
     <title>{{ config('app.name') }} - @yield('title', 'Tvorba web stránok')</title>
 
     {{--  Styles  --}}
     <link href="{{ asset( mix('/css/app.css') ) }}" rel="stylesheet">
+
+    {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> --}}
 </head>
 <body>
 
@@ -33,8 +45,17 @@
 
     @yield('content')
 
+    <footer id="footer">
+        <p><a href="{{ url('/') }}">&copy; Copyright  {{ now()->year }} KAFEX - Všetky práva vyhradené</a></p>
+    </footer>
 
-    <script src="{{ asset( mix('/js/app.js') ) }}"></script>
+    {{-- <script src="{{ asset( mix('/js/app.js') ) }}"></script> --}}
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 

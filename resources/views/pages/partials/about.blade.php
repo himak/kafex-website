@@ -1,35 +1,41 @@
-<section class="about">
+<section class="about" id="o-nas">
     <div class="container">
-        <div class="circle-3"></div>
+        <div class="circle-3" data-aos="zoom-in" data-aos-duration="1000"></div>
 
-        <div class="about-body bg-light">
+        <div class="about-body bg-light" data-aos="fade-right" data-aos-delay="200">
             <header>
-                <h2 class="about-title">{{ __('Kto je KAFEX') }}</h2>
+                <hgroup>
+                    <h2 class="about-name sr-only">{{ __('O nás') }}</h2>
+                    <h3 class="about-title" data-aos="fade-up" data-aos-delay="100">{{ __('Kto je KAFEX') }}</h3>
+                </hgroup>                
             </header>
             <div class="about-text">
-{{--                <p>{{ __('Webové stránky vyvíjam už od roku 2014. Pracujem s modernými technológiami a frameworkami. Aktuálne pôsobím v Bratislave. Voľný čas trávim v prírode s rodinou a psom.') }}</p>--}}
-                <p>{{ __('Za spoločnosťou je Marek Zofota. Pracujem ako freelancer. Webové stránky vyvíjam od roku 2014. Pracujem s modernými technológiami a frameworkami. Aktuálne pôsobím v Bratislave. Voľný čas trávim v prírode s rodinou a psom.') }}</p>
-                <a href="{{ url('#kontakt') }}" class="btn btn-primary">{{ __('Pozvať na kávu') }}</a>
+                <p data-aos="fade-up" data-aos-delay="300">{{ __('Som freelancer a pracujem ako webdeveloper už 8 rokov.  Ponúkam tvorbu web stránok, e-shopov a webových aplikácií na mieru. Webové projekty programujem v PHP s frameworkami WordPress a Laravel. Žijem v Bratislave. Voľný čas trávim v prírode s rodinou a psom.') }}</p>
+                <a href="{{ url('#kontakt') }}" class="btn" data-aos="fade-up" data-aos-delay="500">{{ __('Pozvať na kávu') }}</a>
             </div>
         </div>
         <footer class="about-footer">
-            <picture class="about-photo">
-                <source srcset="{{ asset('/images/me.jpg') }}" media="(max-width: 1200px)">
-                <source srcset="{{ asset('/images/me@2x.jpg') }}" media="(min-width: 1200px)">
+            <picture class="about-photo" data-aos="fade-up-right" loading="lazy">
+                <source srcset="{{ asset('/images/me.jpg') }}" media="(max-width: 1200px)" loading="lazy">
+                <source srcset="{{ asset('/images/me@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
                 <img src="{{ asset('/images/me.jpg') }}"
                      srcset="{{ asset('/images/me.jpg') }} 1200w,
                     {{ asset('/images/me@2x.jpg') }} 2000w"
                      sizes="100vw"
-                     alt="{{ __('káva a zápisník s perom na stole') }}">
+                     alt="{{ __('káva a zápisník s perom na stole') }}"
+                     width="146" height="146" 
+                     loading="lazy">
             </picture>
-            <picture class="about-image">
-                <source srcset="{{ asset('/images/coffe.jpg') }}" media="(max-width: 1200px)">
-                <source srcset="{{ asset('/images/coffe@2x.jpg') }}" media="(min-width: 1200px)">
+            <picture class="about-image" data-aos="fade-up-left" loading="lazy">
+                <source srcset="{{ asset('/images/coffe.jpg') }}" media="(max-width: 1200px)" loading="lazy">
+                <source srcset="{{ asset('/images/coffe@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
                 <img src="{{ asset('/images/coffe.jpg') }}"
                      srcset="{{ asset('/images/coffe.jpg') }} 1200w,
                         {{ asset('/images/coffe@2x.jpg') }} 2000w"
                      sizes="100vw"
-                     alt="{{ __('káva a zápisník s perom na stole') }}">
+                     alt="{{ __('káva a zápisník s perom na stole') }}"
+                     width="496" height="318" 
+                     loading="lazy">
             </picture>
         </footer>
     </div>

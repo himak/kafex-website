@@ -61,5 +61,9 @@
   .technologies-image {
     width: 25%;
     margin: em(20);
+
+    &.woocommerce {
+      max-height: em(30);
+    }
   }
 }

@@ -12,6 +12,10 @@
   box-shadow: em(8)  em(8)  em(8) rgba($black, 8%);
 }
 
+@mixin shadow-3 {
+  box-shadow: 0 em(2) em(4) rgba($black, 20%);
+}
+
 @mixin heading {
   font-family: $font-head;
   font-weight: 900;

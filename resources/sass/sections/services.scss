@@ -36,6 +36,31 @@
     &:focus {
       top: em(8);
       transition: top .2s;
+
+      .services-text small {
+        color: $blue;
+      }
+
+      .bg-blue {
+        .services-text small {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .bg-light {
+    &,
+    a {
+      color: $black;
+    }
+
+  }
+
+  .bg-blue {
+    &,
+    a {
+     color: $white; 
     }
   }
 }
@@ -54,10 +79,6 @@
 
   small {
     text-decoration: underline;
-  }
-
-  &.bg-blue small {
-    color: $white;
   }
 }
 

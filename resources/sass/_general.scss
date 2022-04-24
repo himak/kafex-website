@@ -1,18 +1,19 @@
 *, *:before, *:after {
   box-sizing: border-box;
-  //outline: 1px solid red;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: $font-text;
   font-weight: 300;
   font-size: 100%;
+  color: $text-body;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,10 +30,14 @@ ul {
 img {
   width: 100%;
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
-a { text-decoration: none; }
+a { 
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
 
 strong { font-weight: 700; }
 
@@ -137,6 +142,8 @@ p {
   height: em(40);
   display: inline-flex;
   align-items: center;
+  @include shadow-3;
+  transition: all .5s ease-in-out;
 
   &:hover,
   &:focus {
@@ -144,3 +151,8 @@ p {
     color: $btn-color-hover !important;
   }
 }
+
+.section {}
+.section-name {}
+.section-title {}
+.section-subtitle {}
