@@ -11,6 +11,7 @@
     @include('pages.partials.services')
     @include('pages.partials.technologies')
     @include('pages.partials.projects')
+    @include('pages.partials.bio')
     @include('pages.partials.contact')
     @include('pages.partials.pre-footer')
 

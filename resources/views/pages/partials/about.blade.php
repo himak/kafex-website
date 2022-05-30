@@ -22,7 +22,7 @@
                      srcset="{{ asset('/images/me.jpg') }} 1200w,
                     {{ asset('/images/me@2x.jpg') }} 2000w"
                      sizes="100vw"
-                     alt="{{ __('káva a zápisník s perom na stole') }}"
+                     alt="{{ __('fotka tváre Marek Zofota') }}"
                      width="146" height="146" 
                      loading="lazy">
             </picture>

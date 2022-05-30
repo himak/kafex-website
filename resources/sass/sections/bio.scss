@@ -1,0 +1,147 @@
+.bio {
+	position: relative;
+	z-index: 2;
+	
+	.container {
+		padding-left: 0;
+	}
+}
+
+.bio-subtitle {
+	font-size: 2.5em;
+	font-family: Nunito, sans-serif;
+	font-weight: 900;
+	margin: 0;
+}
+
+.bio-body {
+	background-color: $bg-grey;
+	color: $white;
+	max-width: 83.3333333333%;
+	padding: em(60) 20% em(100) 16.6666666667%;
+	border-radius: 0 em(8) 0 0;
+	@include shadow-2;
+	position: relative;
+	left: -16.6666666667%;
+	z-index: 2;
+
+	p {
+		margin: 0;
+	}
+}
+
+.bio-text {
+	padding: em(20)	em(60) em(20) 0;
+}
+
+.bio-name {
+	font-size: 20px;
+	margin: 0;
+}
+
+.bio-photo img {
+	width: em(360);
+	height: em(360);
+	border-radius: em(360);
+	position: absolute;
+	right: -16.6666666667%;
+	bottom: -8.33333333333%;
+	@include shadow-2;
+}
+
+.bio-socials {
+
+	display: flex;
+	margin-top: em(20);
+
+
+	a {
+		display: inline-block;
+		position: relative;
+		margin-right: em(20);
+		min-width: em(32);
+		min-height: em(42);
+		bottom: 0;
+		transition: bottom easy-in-out .4s;
+
+		&:before {
+			content: '';
+			position: absolute;
+			width: em(32);
+			height: em(32);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		&.icon-linkedin:before { background-image: url('/images/icons/linkedin.svg') }
+		&.icon-dribbble:before { background-image: url('/images/icons/dribbble.svg') }
+		&.icon-github:before { background-image: url('/images/icons/github.svg') }
+		&.icon-superuser:before { background-image: url('/images/icons/superuser.svg') }
+
+
+		&:hover,
+		&:focus {
+
+			bottom: em(2);
+			transition: bottom ease-in-out .2s;
+
+			&.icon-linkedin:before { background-image: url('/images/icons/linkedin-color.svg') }
+			&.icon-dribbble:before { background-image: url('/images/icons/dribbble-color.svg') }
+			&.icon-github:before { background-image: url('/images/icons/github-color.svg') }
+			&.icon-superuser:before { background-image: url('/images/icons/superuser-color.svg') }
+		}
+	}
+
+}
+
+@media (max-width: $screen-xl) {
+	
+	.bio {
+		.container {
+			padding-left: 0;
+		}
+	}
+
+	.bio-body {
+		left: -8.3333333333%;
+	}
+}
+
+@media (max-width: $screen-lg) {
+
+	.bio-photo img {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: $screen-sm) {
+
+	.bio-subtitle {
+		font-size: 36px;
+	}
+
+	.bio-photo img {
+		font-size: 10px;
+		right: -25%;
+		bottom: -5%;
+	}
+
+	.bio-body {
+		left: 0;
+		padding: em(40) em(20);
+	}
+
+	.bio-text {
+		padding-right: em(20);
+	}
+
+	.bio-socials {
+		margin-bottom: em(40);
+		flex-wrap: wrap;
+		max-width: em(120);
+	}
+}
+
+
+
