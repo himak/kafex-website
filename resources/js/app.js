@@ -1,3 +1,6 @@
-require('./bootstrap');
+require('./bootstrap')
 
-// require('aos');
+
+import AOS from 'aos';
+
+AOS.init();

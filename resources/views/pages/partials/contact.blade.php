@@ -11,37 +11,36 @@
 
 	    <div class="contact-content">
 	    	<a href="tel:00421950400468" data-aos="fade-up" data-aos-delay="100">
-	    		<img src="images/icons/mobile.svg" alt="phone" style="max-height: 40px;" height="40" loading="lazy">
+	    		<img src="{{ asset('images/icons/mobile.svg') }}" alt="phone" style="max-height: 40px;" height="40" loading="lazy">
 		    	+421 (0) 950 400 468
 		    </a>
 
-		    <a href="mailto:kafex&commat;kafex.sk?subject=Chcem web stranku&body=Dobry den, chcem web stranku." data-aos="fade-up" data-aos-delay="300">
-	    		<img src="images/icons/paper-plane.svg" alt="email" style="max-height: 40px;" height="40" loading="lazy">
+		    <a href="mailto:kafex&commat;kafex.sk?subject=Chcem%20web%20stranku&body=Dobry%20den,%20chcem%20web%20stranku." data-aos="fade-up" data-aos-delay="300">
+	    		<img src="{{ asset('images/icons/paper-plane.svg') }}" alt="email" style="max-height: 40px;" height="40" loading="lazy">
 		    	kafex&commat;kafex.sk
 		    </a>
 
 		    <a href="https://g.page/kafex" data-aos="fade-up" data-aos-delay="100">
-	    		<img src="images/icons/map-pin.svg" alt="address" style="max-height: 40px;" height="40" loading="lazy">
+	    		<img src="{{ asset('images/icons/map-pin.svg') }}" alt="address" style="max-height: 40px;" height="40" loading="lazy">
 		    	<address>
 		    		Pri Hrubej lúke 5, Bratislava<br>Slovakia
 		    	</address>
 		    </a>
 
-		    <a href="mailto:kafex&commat;kafex.sk?subject=Chcem web stranku&body=Dobry den, chcem web stranku." class="btn" data-aos="fade-up" data-aos-delay="100">{{ __('Napíšte mi') }} :)</a>
+		    <a href="mailto:kafex&commat;kafex.sk?subject=Chcem%20web%20stranku&body=Dobry%20den,%20chcem%20web%20stranku." class="btn" data-aos="fade-up" data-aos-delay="100">{{ __('Napíšte mi') }} :)</a>
 
-	    	<picture 
+	    	<picture
 	    		class="contact-image"
-	    		loading="lazy"
 	    		data-aos="fade-up"
 	    		data-aos-delay="400">
-				<source srcset="{{ asset('/images/bratislava-castle.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-				<source srcset="{{ asset('/images/bratislava-castle@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+				<source srcset="{{ asset('/images/bratislava-castle.jpg') }}" media="(max-width: 1200px)">
+				<source srcset="{{ asset('/images/bratislava-castle@2x.jpg') }}" media="(min-width: 1200px)">
 				<img src="{{ asset('/images/bratislava-castle.jpg') }}"
 					srcset="{{ asset('/images/bratislava-castle.jpg') }} 1200w,
 					{{ asset('/images/bratislava-castle@2x.jpg') }} 2000w"
 					sizes="100vw"
 					alt="{{ __('pohlad na bratislavsky hrad') }}"
-					width="1160" height="493" 
+					width="1160" height="493"
 					loading="lazy">
             </picture>
 	    </div>

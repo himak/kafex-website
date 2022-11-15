@@ -14,19 +14,19 @@
         <div class="box">
             <div class="item">
                 <a href="{{ url('/#kontakt') }}" class="service-content bg-light rounded" data-aos="fade-left" data-aos-delay="100">
-                    <img class="services-icon" src="{{ asset('/images/icons/cursor-click.svg') }}" alt="{{ __('Klik kurzorom') }}" 
-                        width="100" height="100" 
+                    <img class="services-icon" src="{{ asset('/images/icons/cursor-click.svg') }}" alt="{{ __('Klik kurzorom') }}"
+                        width="100" height="100"
                         loading="lazy">
                     <h3 class="services-name">{{ __('Registrácia domény') }}</h3>
                     <div class="services-text">
-                        <p>{!! __('Doména je názov web stránky (www.firma.sk</i>) so správnou koncovkou (.sk, .com, .travel) a tvorí aj základ vlastnej e-mailovej adresy (meno@kafex.sk).') !!}</p>
+                        <p>{!! __('Doména je názov web stránky (<i>www.firma.sk</i>) so správnou koncovkou (.sk, .com, .travel) a tvorí aj základ vlastnej e-mailovej adresy (meno@kafex.sk).') !!}</p>
                         <p><small>{{ __('Viac info') }}</small></p>
                     </div>
                 </a>
             </div>
             <div class="item">
                 <a href="{{ url('/#kontakt') }}" class="service-content bg-light rounded" data-aos="fade-left" data-aos-delay="300">
-                        <img class="services-icon" src="{{ asset('/images/icons/database.svg') }}" alt="{{ __('Klik kurzorom') }}"width="100" height="100" 
+                        <img class="services-icon" src="{{ asset('/images/icons/database.svg') }}" alt="{{ __('Klik kurzorom') }}" width="100" height="100"
                         loading="lazy">
                     <h3 class="services-name">{{ __('Web hosting') }}</h3>
                     <div class="services-text">
@@ -37,7 +37,7 @@
             </div>
             <div class="item">
                 <a href="{{ url('/#kontakt') }}" class="service-content bg-blue rounded" data-aos="fade-left" data-aos-delay="500">
-                    <img class="services-icon" src="{{ asset('/images/icons/code.svg') }}" alt="{{ __('Klik kurzorom') }}" 
+                    <img class="services-icon" src="{{ asset('/images/icons/code.svg') }}" alt="{{ __('Klik kurzorom') }}"
                     width="100" height="100"
                     loading="lazy">
                     <h3 class="services-name">{{ __('Vývoj softvéru') }}</h3>

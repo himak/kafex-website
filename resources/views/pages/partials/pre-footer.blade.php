@@ -26,7 +26,7 @@
 				<p>
 					<strong>Kontakt</strong>
 					<a href="tel:00421950400468">Tel.: +421 (0) 950 400 468</a>
-					<a href="mailto:kafex&commat;kafex.sk?subject=Chcem web stranku&body=Dobry den, chcem web stranku.">E-mail: kafex&commat;kafex.sk</a>
+					<a href="mailto:kafex&commat;kafex.sk?subject=Chcem%20web%20stranku&body=Dobry%20den,%20chcem%20web%20stranku.">E-mail: kafex&commat;kafex.sk</a>
 					<a href="{{ asset('/docs/policy.pdf') }}" class="policy">Ochrana osobných údajov</a>
 				</p>
 			</div>

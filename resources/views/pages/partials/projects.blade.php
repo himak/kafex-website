@@ -16,13 +16,13 @@
                 <div class="box">
                     <div class="item" data-aos="fade-right">
                         <div class="projects-item mobilroka">
-                            <picture class="projects-image" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+                            <picture class="projects-image">
+                                <source srcset="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }}" media="(max-width: 1200px)">
+                                <source srcset="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }}" media="(min-width: 1200px)">
                                 <img src="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }}"
                                      srcset="{{ asset('/images/projects/mobilroka.sk@2x.jpg') }} 1200w,{{ asset('/images/projects/mobilroka.sk@2x.jpg') }} 2000w"
                                      sizes="100vw"
-                                     width="370" height="285" 
+                                     width="370" height="285"
                                      alt="{{ __('písanie na počítači a loga programátorskych frameworkoch') }}" loading="lazy">
                             </picture>
                             <div class="projects-item-body">
@@ -38,13 +38,13 @@
 
                     <div class="item" data-aos="fade-left" data-aos-delay="300">
                         <div class="projects-item apartmanynevadza">
-                            <picture class="projects-image" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+                            <picture class="projects-image">
+                                <source srcset="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }}" media="(max-width: 1200px)">
+                                <source srcset="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }}" media="(min-width: 1200px)">
                                 <img src="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }}"
                                      srcset="{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }} 1200w,{{ asset('/images/projects/apartmanynevadza.sk@2x.jpg') }} 2000w"
                                      sizes="100vw"
-                                     width="370" height="285" 
+                                     width="370" height="285"
                                      alt="{{ __('písanie na počítači a loga programátorskych frameworkoch') }}" loading="lazy">
                             </picture>
                             <div class="projects-item-body">
@@ -60,13 +60,13 @@
 
                     <div class="item" data-aos="fade-right">
                         <div class="projects-item onlinefaktury">
-                            <picture class="projects-image" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+                            <picture class="projects-image">
+                                <source srcset="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }}" media="(max-width: 1200px)">
+                                <source srcset="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }}" media="(min-width: 1200px)">
                                 <img src="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }}"
                                      srcset="{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }} 1200w,{{ asset('/images/projects/onlinefaktury.sk@2x.jpg') }} 2000w"
                                      sizes="100vw"
-                                     width="370" height="285" 
+                                     width="370" height="285"
                                      alt="{{ __('písanie na počítači a loga programátorskych frameworkoch') }}" loading="lazy">
                             </picture>
                             <div class="projects-item-body">
@@ -82,13 +82,13 @@
 
                     <div class="item" data-aos="fade-left" data-aos-delay="300">
                         <div class="projects-item webstore">
-                            <picture class="projects-image" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/webstore.sk@2x.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-                                <source srcset="{{ asset('/images/projects/webstore.sk@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+                            <picture class="projects-image">
+                                <source srcset="{{ asset('/images/projects/webstore.sk@2x.jpg') }}" media="(max-width: 1200px)">
+                                <source srcset="{{ asset('/images/projects/webstore.sk@2x.jpg') }}" media="(min-width: 1200px)">
                                 <img src="{{ asset('/images/projects/webstore.sk@2x.jpg') }}"
                                      srcset="{{ asset('/images/projects/webstore.sk@2x.jpg') }} 1200w,{{ asset('/images/projects/webstore.sk@2x.jpg') }} 2000w"
                                      sizes="100vw"
-                                     width="370" height="285" 
+                                     width="370" height="285"
                                      alt="{{ __('písanie na počítači a loga programátorskych frameworkoch') }}" loading="lazy">
                             </picture>
                             <div class="projects-item-body">

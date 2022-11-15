@@ -2,10 +2,8 @@
 	<div class="container">
 		<div class="bio-body">
 			<header class="bio-header">
-				<hgroup>
-					<h2 class="bio-title sr-only">{{ __('Životopis') }}</h2>
-					<h3 class="bio-subtitle" data-aos="fade-right" data-aos-duration="600">{{ __('S kým budete komunikovať') }}</h3>
-				</hgroup>                
+				<h2 class="bio-title sr-only">{{ __('Životopis') }}</h2>
+				<h3 class="bio-subtitle" data-aos="fade-right" data-aos-duration="600">{{ __('S kým budete komunikovať') }}</h3>
 			</header>
 
 			<div class="bio-text" data-aos="fade-right" data-aos-duration="700">
@@ -40,15 +38,15 @@
 				</ul>
 			</footer>
 
-			<picture class="bio-photo" loading="lazy" data-aos="fade-left" data-aos-delay="300">
-				<source srcset="{{ asset('/images/me.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-				<source srcset="{{ asset('/images/me@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+			<picture class="bio-photo" data-aos="fade-left" data-aos-delay="300">
+				<source srcset="{{ asset('/images/me.jpg') }}" media="(max-width: 1200px)">
+				<source srcset="{{ asset('/images/me@2x.jpg') }}" media="(min-width: 1200px)">
 				<img src="{{ asset('/images/me.jpg') }}"
 				srcset="{{ asset('/images/me.jpg') }} 1200w,
 				{{ asset('/images/me@2x.jpg') }} 2000w"
 				sizes="100vw"
 				alt="{{ __('fotka tváre Marek Zofota') }}"
-				width="146" height="146" 
+				width="146" height="146"
 				loading="lazy">
 			</picture>
 		</div>

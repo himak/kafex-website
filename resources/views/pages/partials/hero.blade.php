@@ -20,15 +20,15 @@
         </div>
 
         <footer class="hero-footer">
-            <picture class="hero-image" loading="lazy">
-                <source srcset="{{ asset('/images/hero.jpg') }}" media="(max-width: 1200px)" loading="lazy">
-                <source srcset="{{ asset('/images/hero@2x.jpg') }}" media="(min-width: 1200px)" loading="lazy">
+            <picture class="hero-image">
+                <source srcset="{{ asset('/images/hero.jpg') }}" media="(max-width: 1200px)">
+                <source srcset="{{ asset('/images/hero@2x.jpg') }}" media="(min-width: 1200px)">
                 <img src="{{ asset('/images/hero.jpg') }}"
                      srcset="{{ asset('/images/hero.jpg') }} 1200w,
                         {{ asset('/images/hero@2x.jpg') }} 2000w"
                      sizes="100vw"
                      alt="{{ __('písanie na počítači a loga programátorskych frameworkoch') }}"
-                     width="1160" height="493" 
+                     width="1160" height="493"
                      loading="lazy">
             </picture>
         </footer>
