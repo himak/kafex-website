@@ -1,3 +1,5 @@
+$icon-dribble-color: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZWE0Yzg5O308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTE2LDMyQTE2LDE2LDAsMSwxLDMyLDE2LDE2LjAyMSwxNi4wMjEsMCwwLDEsMTYsMzJaTTI5LjQ5MywxOC4xODlhMjAuMDQ0LDIwLjA0NCwwLDAsMC04LjUxMi0uNTg0LDU5LjEwNSw1OS4xMDUsMCwwLDEsMi42NTYsOS43NDQsMTMuNjg4LDEzLjY4OCwwLDAsMCw1Ljg1Ni05LjE2Wk0yMS4zNCwyOC42YTU2Ljg1Niw1Ni44NTYsMCwwLDAtMi45Mi0xMC4zNmwtLjA4OC4wMjdDMTAuNjEyLDIwLjk1Myw3Ljg1MiwyNi4zLDcuNjEyLDI2LjhBMTMuNjM0LDEzLjYzNCwwLDAsMCwyMS4zNCwyOC42Wk01Ljg0NywyNS4xNmMuMzA5LS41MzMsNC4wNi02Ljc0LDExLjEwOS05LjAyLjE4LS4wNi4zNi0uMTEyLjU0LS4xNi0uMzQ3LS43OC0uNzItMS41NTYtMS4xMDktMi4zMkE1MC4zNzMsNTAuMzczLDAsMCwxLDIuMzQxLDE1LjZsLS4wMDUuNDE2QTEzLjY0OCwxMy42NDgsMCwwLDAsNS44NDcsMjUuMTZaTTIuNjIsMTMuMjJhNTAuNzQ4LDUwLjc0OCwwLDAsMCwxMi42MzYtMS42NjQsODcuMyw4Ny4zLDAsMCwwLTUuMDY3LTcuOUExMy43LDEzLjcsMCwwLDAsMi42MiwxMy4yMlpNMTIuOCwyLjczNmE3Mi45MjMsNzIuOTIzLDAsMCwxLDUuMSw4YzQuODYtMS44Miw2LjkyLTQuNTg3LDcuMTY0LTQuOTM2QTEzLjYsMTMuNiwwLDAsMCwxMi44LDIuNzM2Wk0yNi41OCw3LjM4YTE4LjI3MSwxOC4yNzEsMCwwLDEtNy42MzIsNS4zODdjLjMyLjY1My42MjcsMS4zMTMuOTA3LDEuOTgxLjEwNy4yNC4yLjQ4LjI5My43MDdhMzIsMzIsMCwwLDEsOS41Mi40NEExMy41MjUsMTMuNTI1LDAsMCwwLDI2LjU4LDcuMzhaIi8+PC9zdmc+";
+
 .bio {
 	position: relative;
 	z-index: 2;
@@ -87,7 +89,7 @@
 			transition: bottom ease-in-out .2s;
 
 			&.icon-linkedin:before { background-image: url('/images/icons/linkedin-color.svg') }
-			&.icon-dribbble:before { background-image: url('/images/icons/dribbble-color.svg') }
+			&.icon-dribbble:before { background-image: url($icon-dribble-color) }
 			&.icon-github:before { background-image: url('/images/icons/github-color.svg') }
 			&.icon-superuser:before { background-image: url('/images/icons/superuser-color.svg') }
 		}
